@@ -1,0 +1,165 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: "roboto slab";
+    
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    border: none;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    align-content: space-around;
+    justify-content: flex-end;
+    margin: 2em;
+    
+}
+
+.home, .our-package, .call {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+h4 {
+    color: rgb(148, 146, 146);
+    text-align: center;
+}
+
+h6 {
+    color: rgb(148, 146, 146);
+}
+
+.container-form {
+    display: flex;
+    margin: 3em;
+    
+}
+
+img {
+    border: 1px solid black;
+    left: 10px;
+    height: 60vh;
+    width: 60vh;
+    position: relative;
+    
+}
+
+#img {
+    flex: 3;
+}
+
+.komentar {
+    text-align: center;
+}
+
+#form {
+    flex: 1;
+    padding: 2em;
+    font-size: 25px;
+    background-color: whitesmoke;
+    padding-right: 20px;
+    position: relative;
+    
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 190, 190);
+    padding: 1em;
+    width: 15em;
+}
+
+.option-container {
+    display: flex;
+}
+
+#select-option {
+    flex: 0 1 10px;
+    padding-left: 10px;
+}
+
+select {
+    border-radius: 5px;
+    width: 18px;
+}
+
+.send, .send2 {
+    background-color: rgb(48, 48, 56);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(48, 48, 56);
+    font-weight: bold;
+    padding: 15px;
+    width: 14.4rem;
+    margin-top: 20px;
+}
+
+.send:hover, .send2:hover {
+    background-color: gray;
+}
+.imgProfile {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px 2px rgba(84, 43, 111, 0.485);
+}
+
+.pembatas {
+    background-color: gray;
+    height: 1px;
+    width: 100px;
+    box-shadow: 10px 2px 20px 1px;
+    opacity: 40%;
+}
+
+.img-logo {
+    flex: 1;
+}
+
+.pack {
+    margin-top: 25px;
+}
+
+ul.lamp {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.buy {
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+a {
+    color: gray; 
+    text-decoration: none;
+    margin: 10px;
+}
