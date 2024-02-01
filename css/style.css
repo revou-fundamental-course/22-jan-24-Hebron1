@@ -31,6 +31,7 @@ body {
     font-size: 15px;
     padding: 10px;
     font-weight: lighter;
+    cursor: pointer;
 }
 
 h2 {
@@ -161,5 +162,23 @@ footer {
 a {
     color: gray; 
     text-decoration: none;
-    margin: 10px;
 }
+
+.error {
+    color: red;
+    font-size: small;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 900px) {
+    
+    .responsive {
+        flex-direction: column;
+        max-height: 100vh;
+        width: 200vw;
+        display: grid;
+        grid-template-rows: auto;
+        font-size: small;
+        
+    }
+}
+

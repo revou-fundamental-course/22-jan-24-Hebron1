@@ -13,18 +13,19 @@
     />
 </head>
 <body>
+<div class="responsive">
 <div>
     <header class="header">
         
         <nav class="container">
           
             <div class="img-logo">
-                <img id="logo" src="./assets/images/Ikon_logo sayur.png">
+                <img id="logo" src="./assets/images/Ikon_logo sayur.png" alt="ikon-logo">
             </div>
             <div class="pack">
-            <button class="home"><a href="#home">Home</a></button>
-            <button class="our-package"><a href="#package">Our Package</a></button>
-            <button class="call"><a href="#call-us">Call Us</a></button>
+                <a href="#home"><button class="home">Home</button></a>
+                <a href="#package"><button class="our-package">Our Package</button></a>
+                <a href="#call-us"><button class="call">Call Us</button></a>
             </div>
             
         </nav>
@@ -37,14 +38,14 @@
 
 <form class="container-form">
     <div id="img">
-    <center><img src="./assets/images/1.png"></center>
+    <center><img src="./assets/images/1.png" alt="groceries.png"></center>
     
     <div class="komentar">
         <p>Apa kata mereka?</p>
         <p><i>"Saya tidak menyangka, daging salmon yang dijual, tidak bau dan masih segar!"</i></p>
         <img
           class="imgProfile"
-          src="https://demo.templateflip.com/right-resume/images/avatar.jpg"
+          src="https://demo.templateflip.com/right-resume/images/avatar.jpg" alt="avatar.jpg"
         />
         <p>Ellen May</p>
         <center><div class="pembatas"></div></center>
@@ -71,13 +72,15 @@
             <h6>egroceries@yahoo.com.<br> Pesan akan kami balas 1x24jam.</h6>
             <div>
             <label>Your Name:</label><br>
-            <input type="text" name="box-name" placeholder="First and last name">
+            <input type="text" name="input-name" placeholder="First and last name" required>
+            <p id="name-error" class="error"></p>
             </div>
             <br>
             
             <div>
             <label>Email Address:</label><br>
-            <input type="text" name="box-name" placeholder="example@gmail.com">
+            <input type="text" name="input-email" placeholder="example@gmail.com" required>
+            <p id="email-error" class="error"></p>
             </div>
             <br>
             
@@ -86,9 +89,12 @@
             <div class="option-container">
             <input type="text" name="option" id="select-option" placeholder="Select option" style="width: 350px;">
             <select>
+                <option value="0">wortel</option>
+                <option value="1">bayam</option>
+                <option value="2">Kangkung</option>
             </select>
             </div>
-            <button class="send" style="cursor: pointer;">SEND</button>
+            <button class="send" style="cursor: pointer;" id="send">SEND</button>
         
     </div>
 </form>
@@ -132,9 +138,13 @@
 </body>
 <footer>
     <div> 
-    <img src="./assets/images/Ikon_logo sayur.png" id="logo">
+    <img src="./assets/images/Ikon_logo sayur.png" id="logo" alt="ikon-logo">
     </div>
-    <p style="margin: 0; padding: 0;"><a href="">Terms of Service</a><a href="">Privacy Policy</a></p>
+    <p style="margin: 0; padding: 0;"><a href="" style="margin: 10px;">Terms of Service</a><a href="" style="margin: 10px;">Privacy Policy</a></p>
     <p style="color: gray; text-decoration: none; margin: 10px;">@ 2024 E-groceries</p>
+    <p id="jerk"></p>
+<script src="./js/script.js"></script>
 </footer>
+</div>
+
 </html>
